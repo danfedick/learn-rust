@@ -14,7 +14,7 @@ mod kids;
 *Note:* /All lines in Rust should end with a semicolon/
 
 This is the main function.
-The main function is calling the run function in the kids module located in the =kids.rs=
+The main function is calling the run function in the [[./kids.org][kids module]] located in the =kids.rs=
 
 #+begin_src rust
 fn main() {
