@@ -27,7 +27,7 @@ Use the Println! function.
 The ={}= is a placeholder for each element in the tuple.
 There are 8 children so there are 8 elements in the tuple.
 
-To access each element, call the =n=th number of the tuple by appending the =.n= where  =n= is the number of the element.
+To access each element, call the =n= th number of the tuple by appending the =.n= where  =n= is the number of the element.
 *Note:* The list is =0= indexed.
 
 #+begin_src  rust
