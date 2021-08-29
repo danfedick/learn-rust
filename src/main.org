@@ -1,0 +1,25 @@
+#+TITLE: Main Rust File:
+#+PROPERTY: header-args :tangle ./main.rs
+
+
+During compilation, Rust will look for a  =main.rs= file
+
+This line will look for a module named =kids=
+The module is named after the file in the same directory.
+
+#+begin_src rust
+mod kids;
+#+end_src
+*Note:* /All lines in Rust should end with a semicolon/
+
+This is the main function.
+The main function is calling the run function in the kids module located in the =kids.rs=
+
+#+begin_src rust
+fn main() {
+    kids::run();
+}
+#+end_src
+
+
+To Run the code, use the =cargo run= command.  This will compile and run the binary.

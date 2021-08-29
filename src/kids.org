@@ -1,0 +1,49 @@
+#+TITLE: Kids  - An Example of using String Tuples
+#+PROPERTY: header-args :tangle ./kids.rs
+
+
+Create a function called =run= which can be called in the kids method.
+=pub= references a "public" method.
+#+begin_src rust
+pub fn run() {
+#+end_src
+
+This is setting an immutable tuple with a list of 8 children.  Each element is "str" type element.
+
+#+begin_src rust
+    let kids: (&str, &str, &str, &str, &str, &str, &str, &str) = (
+        "Jaron",
+        "Chaya",
+        "Jovie",
+        "Zane",
+        "Wilder",
+        "Crosby",
+        "Declan",
+        "Creed"
+    );
+#+end_src
+
+Use the Println! function.
+The ={}= is a placeholder for each element in the tuple.
+There are 8 children so there are 8 elements in the tuple.
+
+To access each element, call the =n=th number of the tuple by appending the =.n= where  =n= is the number of the element.
+*Note:* The list is =0= indexed.
+
+#+begin_src  rust
+    println!("My kids names are: {}, {}, {}, {}, {}, {}, {}, {}",
+             kids.0,
+             kids.1,
+             kids.2,
+             kids.3,
+             kids.4,
+             kids.5,
+             kids.6,
+             kids.7
+    );
+#+end_src
+
+This  curly brace is to close out the function
+#+begin_src rust
+}
+#+end_src
