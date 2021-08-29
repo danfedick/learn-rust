@@ -4,8 +4,9 @@
 
 During compilation, Rust will look for a  =main.rs= file
 
-This line will look for a module named =kids=
-The module is named after the file in the same directory.
+This line will look for a module named =kids=.
+
+The module is named after the file in the same directory.  In this case: =kids.rs=.
 
 #+begin_src rust
 mod kids;
